@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:birch_sign"
+        },
+        "title": {
+            "text": "羽根突きセット！"
+        },
+        "description": {
+            "text": "羽根突きセットを入手"
+        },
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "get": {
+            "trigger": "recipe_unlocked",
+            "conditions": {
+                "recipe": "hanetsuki:hanetsuki"
+            }
+        }
+    },
+    "rewards": {
+        "function": "hanetsuki:get"
+    }
+}

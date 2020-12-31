@@ -1,0 +1,17 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:birch_sign"
+        },
+        {
+            "item": "minecraft:feather"
+        },
+        {
+            "item": "minecraft:black_wool"
+        }
+    ],
+    "result": {
+        "item": "minecraft:birch_sign"
+    }
+}

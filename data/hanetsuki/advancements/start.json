@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:armor_stand"
+        },
+        "title": {
+            "text": "羽根突きスタート！"
+        },
+        "description": {
+            "text": "羽根突きの開始"
+        },
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "start": {
+            "trigger": "item_used_on_block",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:armor_stand",
+                    "nbt": "{HanetsukiStart:true}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "hanetsuki:start"
+    }
+}
