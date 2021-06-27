@@ -18,7 +18,9 @@
             "trigger": "item_used_on_block",
             "conditions": {
                 "item": {
-                    "item": "minecraft:armor_stand",
+                    "items": [
+                        "minecraft:armor_stand"
+                    ],
                     "nbt": "{HanetsukiStart:true}"
                 }
             }
