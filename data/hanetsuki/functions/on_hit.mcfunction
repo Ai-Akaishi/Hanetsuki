@@ -8,9 +8,9 @@
 # 計算用エンティティを１つに絞る
 tag @e[tag=HanetsukiMarker,sort=nearest,limit=1] add HanetsukiMarkerActive
 # 向きを取得
-execute positioned as @s rotated ~50 ~-60 positioned ^0.4 ^ ^0.6928 facing entity @s feet facing ^ ^ ^-1 run tp @e[tag=HanetsukiMarkerActive,sort=nearest,limit=1] ~ ~ ~ ~ ~
-# プレイヤー方向に飛ばせない場合は真上に、少しランダムに飛ばす
-execute at @s rotated as @e[tag=HanetsukiMarkerActive,sort=nearest,limit=1] rotated ~ 0 positioned ^ ^-2 ^6 unless entity @p[distance=..5] at @s positioned ~ ~0.8 ~ rotated as @s rotated ~ 0 positioned ^ ^ ^0.1 run tp @e[tag=HanetsukiMarkerActive,sort=nearest,limit=1] ~ ~ ~
+data modify entity @e[tag=HanetsukiMarkerActive,sort=nearest,limit=1] Rotation set from storage hanetsuki: Rotation
+execute positioned as @s as @e[tag=HanetsukiMarkerActive,sort=nearest,limit=1] rotated as @s run tp @s ^ ^ ^1 ~ ~
+
 # ランダム性を更新
 execute store result entity @s Rotation[0] float 0.001 run data get entity @e[tag=HanetsukiMarkerActive,sort=nearest,limit=1] Rotation[0] 180000
 
